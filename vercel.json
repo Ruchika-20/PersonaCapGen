@@ -6,15 +6,13 @@
       "use": "@vercel/python"
     }
   ],
-  "functions": {
-    "index": {
-      "runtime": "vercel-python@3.9"
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "env": {
+    "PYTHON_VERSION": "3.8.10"
+  }
 }
