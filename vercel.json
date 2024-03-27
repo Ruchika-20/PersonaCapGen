@@ -6,6 +6,11 @@
       "use": "@vercel/python"
     }
   ],
+  "functions": {
+    "index": {
+      "runtime": "vercel-python@3.9"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
@@ -13,4 +18,3 @@
     }
   ]
 }
-
